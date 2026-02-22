@@ -39,4 +39,80 @@ last -1 $USER
 ```
 <img width="775" height="102" alt="image" src="https://github.com/user-attachments/assets/fca0bf67-5527-4984-bf4a-0c08519c47e9" />
 
+
+## Understanding the Filesystem
+
+Linux organizes files in a tree-like structure starting from the root directory:
+/
+Everything lives under `/`.
+
+
+
+### Home Directory
+
+Each user has a personal directory:
+
+
+/home/username
+
+
+For example:
+
+/home/jawharah
+
+
+Shortcut to home directory:
+```bash
+cd ~
+``` 
+~ always means home directory.
+
+### Absolute vs Relative Paths
+Absolute Path
+
+Starts from the root /.
+
+Example:
+
+cd /home/jawharah/projects
+
+Absolute paths always begin with /.
+
+Relative Path
+
+Starts from the current location.
+
+Example:
+```bash
+cd projects
+```
+
+This works only if projects exists in current directory.
+
+Special Path Symbols
+
+. → Current directory
+
+Example:
+```bash
+./script.sh
+```
+.. → Parent directory
+Example:
+```bash
+cd ..
+```
+
+Quick Summary
+
+/ → root (top of filesystem)
+
+~ → home directory
+
+. → current directory
+
+.. → parent directory
+
+
+
  
